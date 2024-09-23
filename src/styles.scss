@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #f8f9fa;
+    padding: 10px;
+    a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #007bff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ngx-spinner {
+    z-index: 999; /* Ensure it's above other components */
+  }
+  

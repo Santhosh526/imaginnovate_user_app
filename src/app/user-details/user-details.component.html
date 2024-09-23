@@ -1,0 +1,19 @@
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-spin"
+></ngx-spinner>
+
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+
+<div *ngIf="user">
+  <h2>{{ user.name }}</h2>
+  <p><strong>Company:</strong> {{ user.company || "N/A" }}</p>
+  <p><strong>Location:</strong> {{ user.location || "N/A" }}</p>
+
+  <h3>Followers</h3>
+  <canvas id="followersChart"></canvas>
+</div>
